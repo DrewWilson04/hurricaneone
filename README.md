@@ -1,6 +1,6 @@
 # Hurricane One
 
-(/hurricaneone/assets/logos/Hurricaneonelogo.png)
+![alt text](https://hurricane.one/assets/logos/Hurricaneonethinlogo.png)
 
 ## Who are we?
 
