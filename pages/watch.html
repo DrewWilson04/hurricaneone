@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storms</title>
+    <title>Watch</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
 </head>
 
 <body>
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="bg-gray-800">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
@@ -80,52 +77,43 @@
         <div class="sm:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-                    aria-current="page">Dashboard</a>
+                <a href="/index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    aria-current="page">Home</a>
 
-                <a href="#"
+                <a href="/pages/main/team/team.html"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
 
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="/pages/main/storms/storms.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Stroms</a>
 
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                <a href="/pages/main/store/store.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Store</a>
             </div>
         </div>
     </nav>
 
-    <div class="">
-        <div class="flex items-center my-32">
-            <span class="border"></span>
-
-            <div x-data="{ dropdownOpen: true }" class="relative text-white">
-                <button @click="dropdownOpen = !dropdownOpen"
-                    class="relative z-10 block bg-gray-800 rounded p-2 text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
-                    <p>Select Year</p>
-                </button>
-
-                <div x-show="dropdownOpen" @click="dropdownOpen = false"
-                    class="fixed text-white inset-0 h-full w-full z-10"></div>
-
-                <div x-show="dropdownOpen"
-                    class="absolute left-0 mt-2 w-48 bg-white rounded-md overflow-hidden shadow-xl z-20">
-                    <a href="/storms/2021/index.html"
-                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">2021 <span
-                            class="text-gray-600"></span></a>
-                    <a href="/storms/2022/index.html"
-                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">2022 <span
-                            class="text-gray-600"></span></a>
-                    <a href="/storms/2023/index.html"
-                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">2023 <span
-                            class="text-gray-600"></span></a>
+    <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+        <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
+            <div
+                class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
+                <div class="box-border flex-1 text-center border-solid sm:text-left">
+                    <h2
+                        class="m-0 text-l font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl">
+                        Watch our latest video
+                    </h2>
                 </div>
+                <!--<a href="#_"
+                    class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans text-base leading-none text-white no-underline bg-indigo-600 border border-indigo-600 border-solid rounded cursor-pointer md:w-auto lg:mt-0 hover:bg-indigo-700 hover:border-indigo-700 hover:text-white focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-lg lg:ml-6 md:text-xl">
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>-->
             </div>
         </div>
-    </div>
-
-
-    <script src="//unpkg.com/alpinejs" defer></script>
+    </section>
 </body>
 
 </html>
