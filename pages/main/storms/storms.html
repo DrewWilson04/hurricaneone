@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <nav class="bg-gray-800">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
@@ -94,51 +93,562 @@
             </div>
         </div>
     </nav>
+    <section class="w-full py-12 bg-white lg:py-24">
+        <div class="max-w-6xl px-12 mx-auto text-center">
+            <div class="space-y-12 md:text-center">
+                <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
+                    <h2 class="relative text-4xl font-extrabold tracking-tight sm:text-5xl">Named Storms</h2>
+                </div>
+            </div>
 
-    <table class="table-fixed w-full">
-        <thead>
-            <tr>
-                <th class="w-1/4 text-left">Storm Name</th>
-                <th class="w-1/4 text-left">Rating</th>
-                <th class="w-1/4 text-left">Date</th>
-                <th class="w-1/4 text-left">Location</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ana</td>
-                <td>Tropical Storm</td>
-                <td>May 22, 2021</td>
-                <td>Atlantic</td>
-            </tr>
-            <tr class="bg-blue-200">
-                <hr>
-                <td>Bill</td>
-                <td>Tropical Storm</td>
-                <td>June 14, 2021</td>
-                <td>Atlantic</td>
-            </tr>
-            <tr>
-                <td>Claudette</td>
-                <td>Tropical Storm</td>
-                <td>June 19, 2021</td>
-                <td>Gulf of Mexico</td>
-            </tr>
-            <tr class="bg-blue-200">
-                <hr>
-                <td>Danny</td>
-                <td>Tropical Storm</td>
-                <td>June 28, 2021</td>
-                <td>Atlantic</td>
-            </tr>
-            <tr>
-                <td>Elsa</td>
-                <td>Category 1 Hurricane</td>
-                <td>July 1, 2021</td>
-                <td>Atlantic</td>
-            </tr>
-        </tbody>
-    </table>
+            <div>
+                <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center">
+
+                        <button onclick="window.location.href='/storms/2021/index.html'" type="button"
+                            class="bg-blue-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-blue-600 transition duration-200 each-in-out">2021</button>
+                        <button onclick="window.location.href='/storms/2022/index.html'" type="button"
+                            class="bg-blue-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-blue-600 transition duration-200 each-in-out">2022</button>
+                        <!--
+                        <button type="button"
+                            class="bg-green-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-green-600 transition duration-200 each-in-out">2023</button>
+                        <button type="button"
+                            class="bg-green-600 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-green-700 transition duration-200 each-in-out">2024</button>
+                        <button type="button"
+                            class="bg-yellow-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-yellow-600 transition duration-200 each-in-out">2025</button>
+                        <button type="button"
+                            class="bg-red-500 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-red-600 transition duration-200 each-in-out">2026</button>
+                        <button type="button"
+                            class="bg-gray-700 text-white px-6 py-2 rounded font-medium mx-3 hover:bg-gray-800 transition duration-200 each-in-out">2027</button>-->
+                    </div>
+                </div>
+                <br>
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021ana.jpg">
+                        <h2 class="text-lg font-medium">Ana</h2>
+                        <p class="font-medium text-blue-500">Tropical Storm</p>
+                        <p class="text-gray-400">May 22, 2021
+                        </p>
+                        <p class="text-gray-400">Atlantic
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021bill.png">
+                        <h2 class="text-lg font-medium">Bill</h2>
+                        <p class="font-medium text-blue-500">Tropical Storm</p>
+                        <p class="text-gray-400">June 14, 2021
+                        </p>
+                        <p class="text-gray-400">Atlantic
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021claudette.jpg">
+                        <h2 class="text-lg font-medium">Claudette</h2>
+                        <p class="font-medium text-blue-500">Tropical Storm</p>
+                        <p class="text-gray-400">June 19, 2021
+                        </p>
+                        <p class="text-gray-400">Gulf of Mexico
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021danny.jpg">
+                        <h2 class="text-lg font-medium">Danny</h2>
+                        <p class="font-medium text-blue-500">Tropical Storm</p>
+                        <p class="text-gray-400">June 28, 2021
+                        </p>
+                        <p class="text-gray-400">Atlantic
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021elsa.png">
+                        <h2 class="text-lg font-medium">Elsa</h2>
+                        <p class="font-medium text-blue-500">Category 1 Hurricane</p>
+                        <p class="text-gray-400">July 1, 2021
+                        </p>
+                        <p class="text-gray-400">Atlantic
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Fred</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+            </div> <br> <br>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Grace</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Henri</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Ida</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Julian</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Kate</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Larry</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Mindy</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Nicholas</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Odette</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Peter</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Rose</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Sam</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Teresa</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Victor</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Wanda</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Alex</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Bonnie</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Colin</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Danielle</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Earl</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Fiona</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+            </div> <br> <br>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Gaston</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Hermine</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Ian</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Julia</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Karl</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Lisa</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Martin</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Nicole</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Owen</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Paula</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Richard</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Shary</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Tobias</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Virginie</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2022/images/tbd.jpg">
+                        <h2 class="text-lg font-medium">Walter</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <!--<div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021danny.jpg">
+                        <h2 class="text-lg font-medium">Peter</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full" src="/storms/2021/images/2021elsa.png">
+                        <h2 class="text-lg font-medium">Rose</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+                    <div class="flex flex-col items-center justify-center p-10">
+                        <img class="w-32 h-32 mb-6 rounded-full"
+                            src="https://cdn.devdojo.com/images/june2021/headshotf2.jpg">
+                        <h2 class="text-lg font-medium">Sam</h2>
+                        <p class="font-medium text-blue-500">TBD</p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                        <p class="text-gray-400">TBD
+                        </p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
 
 
 
